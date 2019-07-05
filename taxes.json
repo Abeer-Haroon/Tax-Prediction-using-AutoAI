@@ -1,0 +1,441 @@
+{
+  "name": "New dashboard",
+  "layout": {
+    "id": "page0",
+    "items": [
+      {
+        "id": "page1",
+        "items": [
+          {
+            "id": "model0000016b948bdb76_00000000",
+            "style": {
+              "left": "174px",
+              "top": "76px",
+              "height": "524px",
+              "width": "713px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b948ce0c1_00000000",
+            "style": {
+              "left": "1014px",
+              "top": "89px",
+              "height": "511px",
+              "width": "582px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b948dc3cf_00000000",
+            "style": {
+              "left": "242px",
+              "top": "767px",
+              "height": "591px",
+              "width": "680px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b9494ed16_00000000",
+            "style": {
+              "width": "386px",
+              "height": "65px",
+              "top": "12px",
+              "left": "337.5px"
+            },
+            "type": "widget",
+            "clones": 1
+          },
+          {
+            "id": "model0000016b9496237a_00000000",
+            "from": "model0000016b9494ed16_00000000",
+            "style": {
+              "width": "256px",
+              "height": "51px",
+              "top": "12px",
+              "left": "1147px"
+            },
+            "type": "widget",
+            "clones": 1
+          },
+          {
+            "id": "model0000016b949789ec_00000000",
+            "from": "model0000016b9496237a_00000000",
+            "style": {
+              "width": "256px",
+              "height": "51px",
+              "top": "678.5px",
+              "left": "362px"
+            },
+            "type": "widget"
+          }
+        ],
+        "type": "absolute",
+        "title": {
+          "translationTable": {
+            "Default": "Tab 1"
+          }
+        },
+        "templateName": "NoTemplate"
+      }
+    ],
+    "style": {
+      "height": "100%"
+    },
+    "type": "tab"
+  },
+  "theme": "defaultTheme",
+  "version": 1009,
+  "eventGroups": [
+    {
+      "id": "page1:1",
+      "widgetIds": [
+        "model0000016b948bdb76_00000000",
+        "model0000016b948ce0c1_00000000",
+        "model0000016b948dc3cf_00000000"
+      ]
+    }
+  ],
+  "properties": {
+    "defaultLocale": "Default"
+  },
+  "dataSources": {
+    "version": "1.0",
+    "sources": [
+      {
+        "id": "model0000016b948a0624_00000002",
+        "assetId": "assetId0000016b948a0624_00000000",
+        "clientId": "eyJwcm9qZWN0IjoiSXRlbXNEZW1hbmRGb3JlY2FzdCIsIm5hbWUiOiJ0YXhlcyIsInR5cGUiOiJDU1YifQ==",
+        "module": {
+          "identifier": "taxes",
+          "label": "taxes",
+          "source": {
+            "id": "taxes",
+            "srcUrl": {
+              "property": [
+                {
+                  "name": "separator",
+                  "value": ","
+                },
+                {
+                  "name": "ColumnNamesLine",
+                  "value": "true"
+                },
+                {
+                  "name": "headers",
+                  "value": [
+                    {
+                      "name": "Authorization",
+                      "value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJLTk9YU1NPIiwiYXVkIjoiRFNYIiwicm9sZSI6IkFkbWluIiwicGVybWlzc2lvbnMiOlsiYWRtaW5pc3RyYXRvciIsIm1hbmFnZV9jYXRhbG9nIiwiYWNjZXNzX2NhdGFsb2ciLCJtYW5hZ2VfcG9saWNpZXMiLCJhY2Nlc3NfcG9saWNpZXMiLCJ2aXJ0dWFsaXplX3RyYW5zZm9ybSIsImNhbl9wcm92aXNpb24iLCJkZXBsb3ltZW50X2FkbWluIl0sInVpZCI6Ijk5OSIsImRpc3BsYXlfbmFtZSI6ImFkbWluIiwiaWF0IjoxNTYxNTY0NzY2LCJleHAiOjE1NjE2MDc5NjZ9.hfPFLRXEaRhnDqhXCLefRriDqlQblGqxCxZdoMvIfllMUS9SyY5OQVGgopgjq00x0LlLni5SDpZWJ2SzLIUShK-e43KPbAA-9h2LxeMb7807CoNaHmFLvnWmgKSKb3EBBw3B5SzUxz6iIACDueiOWga46se58RKIrPGyXw6sfZgPWGcb3hGZVOB9aD_XyATd4eOIBAhSRpz0LB845PqNl14QyfGBiM-zDG5fu8SXc5f09vo14ETL9Lh-ndR9VByEYLGhV3t78dhTQREFYZLxWBZSETqc3VP8N5NSl7Ljyq-GkkkSCY7Qt2-3SGb-uT59sOESIqxKLyzUuylyxB8Bzw"
+                    }
+                  ]
+                }
+              ],
+              "sourceUrl": "http://dsx-core-svc:3000/v3/project/ItemsDemandForecast/asset/taxes.csv/download"
+            }
+          },
+          "table": {
+            "column": [
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "neighborhood",
+                "label": "neighborhood",
+                "name": "neighborhood",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "building_type",
+                "label": "building_type",
+                "name": "building_type",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "year_built",
+                "label": "year_built",
+                "name": "year_built",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cYear",
+                "usage": "identifier"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "volume_interior",
+                "label": "volume_interior",
+                "name": "volume_interior",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "volume_other",
+                "label": "volume_other",
+                "name": "volume_other",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "lot_size",
+                "label": "lot_size",
+                "name": "lot_size",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "taxable_value",
+                "label": "taxable_value",
+                "name": "taxable_value",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              }
+            ],
+            "name": "taxes"
+          },
+          "xsd": "https://ibm.com/daas/module/1.0/module.xsd"
+        },
+        "name": "taxes",
+        "shaping": {
+          "embeddedModuleUpToDate": true
+        }
+      }
+    ]
+  },
+  "pageContext": [],
+  "drillThrough": [],
+  "widgets": {
+    "model0000016b948bdb76_00000000": {
+      "id": "model0000016b948bdb76_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b948a0624_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b948c5b8e_00000001",
+                "itemId": "taxes.taxable_value",
+                "itemLabel": "taxable_value"
+              },
+              {
+                "id": "model0000016b948c6517_00000000",
+                "itemId": "taxes.neighborhood",
+                "itemLabel": "neighborhood"
+              },
+              {
+                "id": "model0000016b948f5c69_00000005",
+                "itemId": "taxes.building_type",
+                "itemLabel": "building_type"
+              }
+            ],
+            "id": "model0000016b948c5b8e_00000000"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b948c6517_00000000"
+            ],
+            "caption": "Bars",
+            "id": "categories",
+            "layerId": "data"
+          },
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b948c5b8e_00000001"
+            ],
+            "caption": "Length",
+            "id": "values",
+            "layerId": "data"
+          },
+          {
+            "name": "color",
+            "dataItems": [
+              "model0000016b948f5c69_00000005"
+            ],
+            "caption": "Color",
+            "id": "color",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "visId": "com.ibm.vis.rave2bundlecolumn",
+      "name": {
+        "translationTable": {}
+      }
+    },
+    "model0000016b948ce0c1_00000000": {
+      "id": "model0000016b948ce0c1_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b948a0624_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b948cee5d_00000002",
+                "itemId": "taxes.year_built",
+                "itemLabel": "year_built"
+              },
+              {
+                "id": "model0000016b948cfb4e_00000001",
+                "itemId": "taxes.taxable_value",
+                "itemLabel": "taxable_value"
+              }
+            ],
+            "id": "model0000016b948cee5d_00000001"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b948cee5d_00000002"
+            ],
+            "dataItemSettings": [],
+            "caption": "Segments",
+            "id": "categories"
+          },
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b948cfb4e_00000001"
+            ],
+            "caption": "Size",
+            "id": "values"
+          }
+        ]
+      },
+      "type": "live",
+      "visId": "com.ibm.vis.rave2bundlepie",
+      "name": {
+        "translationTable": {}
+      }
+    },
+    "model0000016b948dc3cf_00000000": {
+      "id": "model0000016b948dc3cf_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b948a0624_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b948dd2b5_00000002",
+                "itemId": "taxes.neighborhood",
+                "itemLabel": "neighborhood"
+              },
+              {
+                "id": "model0000016b948de1c6_00000000",
+                "itemId": "taxes.year_built",
+                "itemLabel": "year_built"
+              },
+              {
+                "id": "model0000016b948dee52_00000000",
+                "itemId": "taxes.taxable_value",
+                "itemLabel": "taxable_value"
+              }
+            ],
+            "id": "model0000016b948dd2b5_00000001"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b948de1c6_00000000",
+              "model0000016b948dd2b5_00000002"
+            ],
+            "dataItemSettings": [],
+            "caption": "Bubbles",
+            "id": "categories",
+            "layerId": "data"
+          },
+          {
+            "name": "size",
+            "dataItems": [
+              "model0000016b948dee52_00000000"
+            ],
+            "caption": "Size",
+            "id": "size",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "visId": "com.ibm.vis.rave2bundlepackedbubble",
+      "name": {
+        "translationTable": {}
+      },
+      "properties": [
+        {
+          "id": "defaultPaletteIndex",
+          "value": 7
+        }
+      ]
+    },
+    "model0000016b9494ed16_00000000": {
+      "id": "model0000016b9494ed16_00000000",
+      "type": "text",
+      "content": {
+        "translationTable": {
+          "Default": "<div class=\"staticContent textFillNoScroll\" dir=\"auto\"><div class=\"summernote\" style=\"display: none;\"></div><div class=\"note-editor\"><div class=\"note-dropzone\">  <div class=\"note-dropzone-message\"></div></div><div class=\"note-editing-area\"><div class=\"note-handle\"><div class=\"note-control-selection\" style=\"display: none;\"><div class=\"note-control-selection-bg\"></div><div class=\"note-control-holder note-control-nw\"></div><div class=\"note-control-holder note-control-ne\"></div><div class=\"note-control-holder note-control-sw\"></div><div class=\"note-control-sizing note-control-se\"></div><div class=\"note-control-selection-info\"></div></div></div><div class=\"note-editable\" contenteditable=\"false\"><p class=\"responsiveColor responsiveFontSize responsiveFontFamily\" style=\"font-size: 18px;\">Tax by location &amp; type of residence</p></div></div></div></div>"
+        }
+      },
+      "isResponsive": true,
+      "visTypeLocked": true,
+      "name": ""
+    },
+    "model0000016b9496237a_00000000": {
+      "id": "model0000016b9496237a_00000000",
+      "type": "text",
+      "content": {
+        "translationTable": {
+          "Default": "<div class=\"staticContent textFillNoScroll\" dir=\"auto\"><div class=\"summernote\" style=\"display: none;\"></div><div class=\"note-editor\"><div class=\"note-dropzone\">  <div class=\"note-dropzone-message\"></div></div><div class=\"note-editing-area\"><div class=\"note-handle\"><div class=\"note-control-selection\" style=\"display: none;\"><div class=\"note-control-selection-bg\"></div><div class=\"note-control-holder note-control-nw\"></div><div class=\"note-control-holder note-control-ne\"></div><div class=\"note-control-holder note-control-sw\"></div><div class=\"note-control-sizing note-control-se\"></div><div class=\"note-control-selection-info\"></div></div></div><div class=\"note-editable\" contenteditable=\"false\"><p class=\"responsiveColor responsiveFontSize responsiveFontFamily\" style=\"font-size: 24px;\">Tax by year built</p></div></div></div></div>"
+        }
+      },
+      "isResponsive": true,
+      "visTypeLocked": true,
+      "name": ""
+    },
+    "model0000016b949789ec_00000000": {
+      "id": "model0000016b949789ec_00000000",
+      "type": "text",
+      "content": {
+        "translationTable": {
+          "Default": "<div class=\"staticContent textFillNoScroll\" dir=\"auto\"><div class=\"summernote\" style=\"display: none;\"></div><div class=\"note-editor\"><div class=\"note-dropzone\">  <div class=\"note-dropzone-message\"></div></div><div class=\"note-editing-area\"><div class=\"note-handle\"><div class=\"note-control-selection\" style=\"display: none;\"><div class=\"note-control-selection-bg\"></div><div class=\"note-control-holder note-control-nw\"></div><div class=\"note-control-holder note-control-ne\"></div><div class=\"note-control-holder note-control-sw\"></div><div class=\"note-control-sizing note-control-se\"></div><div class=\"note-control-selection-info\"></div></div></div><div class=\"note-editable\" contenteditable=\"false\"><p class=\"responsiveColor responsiveFontSize responsiveFontFamily\" style=\"font-size: 24px;\">Tax by year &amp; location&nbsp;</p></div></div></div></div>"
+        }
+      },
+      "isResponsive": true,
+      "visTypeLocked": true,
+      "name": ""
+    }
+  }
+}
